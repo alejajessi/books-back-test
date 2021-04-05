@@ -7,7 +7,7 @@ const book = {
     "name": `The ${random.words(2)}`,
     "author": "Gabriel García Marquéz"
 };
-describe ("When the user wants to create an animal", () =>{
+describe ("When the user wants to create an book", () =>{
     before(async() =>{
         response = await axios.post('https://books-back-jess.herokuapp.com/books', book);
     });
