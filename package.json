@@ -1,0 +1,27 @@
+{
+  "name": "book-back-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.4"
+  },
+  "devDependencies": {
+    "faker": "^5.5.2",
+    "mocha": "^8.3.2"
+  },
+  "scripts": {
+    "test": "mocha e2e/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejajessi/books-back-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejajessi/books-back-test/issues"
+  },
+  "homepage": "https://github.com/alejajessi/books-back-test#readme"
+}

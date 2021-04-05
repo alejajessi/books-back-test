@@ -8,3 +8,22 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+
+
+  jobs:
+    test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repo
+      - uses: actions/checkout@v2
+
+      - name: set up version nodejs
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: install and configure dependencies
+        run: npm ci
+      - name: run test
+        run: npm test
+          
